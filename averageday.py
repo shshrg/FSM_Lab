@@ -110,6 +110,7 @@ class DaySimulator:
 
                 elif current_hour == 14 or current_hour == 19:
                     print(f"{current_hour}:00 - I cry. Now I'm hungry!")
+                    self.state = State.EAT
 
                 elif event == RandomEvents.HANGOUT_WITH_FRIENDS:
                     if input_ == 0:
